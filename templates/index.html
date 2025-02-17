@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>縮寫查詢系統</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .search-form {
+        text-align: center;
+        margin: 20px 0;
+      }
+      input[type="text"] {
+        padding: 8px;
+        width: 200px;
+      }
+      button {
+        padding: 8px 15px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">縮寫查詢系統</h1>
+    <div class="search-form">
+      <form action="/search" method="POST">
+        <input type="text" name="search" placeholder="請輸入縮寫" required />
+        <button type="submit">查詢</button>
+      </form>
+    </div>
+  </body>
+</html>

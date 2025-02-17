@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>查詢結果</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .result-box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+      .back-btn {
+        padding: 8px 15px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .separator {
+        border-top: 2px solid #ddd;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>查詢結果</h1>
+    {% for result in results %}
+    <div class="result-box">
+      <p><strong>縮寫：</strong> <span>{{result.abbr}}</span></p>
+      <p><strong>全名：</strong> <span>{{result.fullname}}</span></p>
+      <p><strong>中文：</strong> <span>{{result.chinese}}</span></p>
+      <p><strong>備註：</strong> <span>{{result.note}}</span></p>
+    </div>
+    {% if not loop.last %}
+    <div class="separator"></div>
+    {% endif %} {% endfor %}
+    <a href="/" class="back-btn">返回查詢</a>
+  </body>
+</html>

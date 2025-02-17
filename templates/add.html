@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新增縮寫</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .add-form {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+      .button-group {
+        display: flex;
+        gap: 10px;
+      }
+      button {
+        padding: 8px 15px;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .submit-btn {
+        background-color: #4caf50;
+      }
+      .cancel-btn {
+        background-color: #f44336;
+      }
+      button:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>新增縮寫</h1>
+    <div class="add-form">
+      <form action="/add" method="POST" id="addForm">
+        <div class="form-group">
+          <label for="abbr">縮寫：</label>
+          <input type="text" id="abbr" name="abbr" value="{{abbr}}" readonly />
+        </div>
+        <div class="form-group">
+          <label for="fullname">全名：</label>
+          <input type="text" id="fullname" name="fullname" />
+        </div>
+        <div class="form-group">
+          <label for="chinese">中文：</label>
+          <input type="text" id="chinese" name="chinese" required />
+        </div>
+        <div class="form-group">
+          <label for="note">備註：</label>
+          <input type="text" id="note" name="note" />
+        </div>
+        <div class="button-group">
+          <button type="submit" class="submit-btn">新增</button>
+          <button
+            type="button"
+            class="cancel-btn"
+            onclick="window.location.href='/'"
+          >
+            取消
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
