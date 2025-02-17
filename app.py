@@ -2,8 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for
 import pandas as pd
 
 app = Flask(__name__)
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
 # 讀取CSV檔案
 def read_csv():
     return pd.read_csv("wordSearch.csv")
@@ -55,4 +53,4 @@ def add_submit():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
