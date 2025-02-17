@@ -1,0 +1,48 @@
+﻿abbr,full-name,chinese,note
+SFCS,Shop Floor Control System,生产车间控制系统,Sfcs出貨給lms 並回傳給sap status&output =>工單完成
+IT,Information Technology,信息技术,
+SAP,Systems Applications and Products in Data Processing,企业管理解决方案,生管用系統(工單mo、數量)
+B2B,Business to Business,公司对公司之间的电子商务,
+SQMS,Supplier Quality Management System,供应商质量管理系统,物料品質異常處理
+SQM,Supplier Quality Management System,供应商质量管理系统,
+QIS,Quality Information System,质量信息系统,
+WCS,Wistron Customer System,纬创客户系统,
+DPM,Digital Performance Management,数字化绩效管理,
+LMS,Logistic Management System,物流管理系统,
+WMS,Warehouse Management System,库房管理系统,
+CMS3,Customs Management System,税务管理系统,
+MO,Manufacture Order,生产单号(工單),
+WIP,Work In Process,在制品,
+IIS,Internet Information Services,Web信息服务,
+MIC,Manufacturing Information Center,制造信息中心,
+MPA,Material Preparation Area,备料区,
+BOM,Bill of Material,物料清单,
+SCT,SMT Control & Traceability,SMT管控&追溯,
+SMT,Surface Mounting Technology,表面贴装技术,
+DIP,Dual In-line Package,双列直插式组件,
+RLC,Resistor Inductor Capacitor,电阻电感电容,
+MSDC,Moist Sensitive Device Control,湿敏器件控制,
+BVCS,BOM Verification Compare System,BOM验证比对系统,
+PCBA,Printed Circuit Board Assembly,印刷电路板组件,板接
+SPI,Solder Paste Inspection,锡膏检验,
+AOI,Automatic Optical Inspection,自动光学检验,
+LCM,Liquid Crystal Module,液晶模块,
+FA,Final Assembly,最终组装,
+BMS,Backlight Module System,背板模组系统阶,
+UPN,unit part number,unit料号,
+USN,unit serial number,unit序列號,
+CPN,component part number,component料号,
+CSN,component serial number,component序列號,
+SM,System Manager​,系統管理者,"生產流程控管, 生產資料收集程式​"
+MA,MFG Application,工廠應用系統,Report Query報表查詢
+MI,MFG info,工廠資訊,
+CARTON,cartonID,箱號,
+PALLET,palletID,棧版號,
+PLM,Product Lifecycle Management,產品生命週期管理,維護物料=>BOM
+MPM,manufacturing project manager,製成PM,
+QA,Quality assurance,品質保證,
+PD,,,產線人員
+PE,product engineering,產品工程,不良品分析 開label(bar code)
+PSE,product support engineering,,製程系統規劃
+PMC,production&material control,產銷管理,物料管控/fcst/planner
+PMC,production&material control,test,test
